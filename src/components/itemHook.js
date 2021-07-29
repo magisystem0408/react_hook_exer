@@ -15,7 +15,6 @@ const ItemHook = () => {
                         <li key={item.id}>
                             {item.value}
                         </li>
-
                         )
                     )
                 }

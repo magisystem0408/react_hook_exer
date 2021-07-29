@@ -1,6 +1,6 @@
 //usememoは関数の値を保持するという意味
 
-import React,{useState} from 'react';
+import React,{useState,useMemo} from 'react';
 
 function Check(props) {
     const [countOne,setCountOne] =useState(0)
@@ -14,16 +14,15 @@ function Check(props) {
         setCountTwo(countTwo+2)
     }
 
-    const isEven =()=>{
+    const isEven = useMemo(()=>{
         return countOne %2 ===0
-    }
+    },[countOne])
 
     return (
         <div>
-            <h1>カウント1:{isEven() ?'偶数':'奇数'}</h1>
+            <h1>カウント1:{isEven ?'偶数':'奇数'}</h1>
             <button onClick={incrementOne}>カウント-{countOne}</button>
             <button onClick={incrementTwo}>カウント-{countTwo}</button>
-
         </div>
     );
 }

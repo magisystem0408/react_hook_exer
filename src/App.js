@@ -9,7 +9,7 @@ import EffectHook from "./components/EffectHook";
 import MouseEventEffect from "./components/MouseEventEffect";
 import DataFetch from "./components/DataFetch";
 import DataFetchByid from "./components/DadaFetchByid";
-import ComponentC from "./components/ComponentC";
+import ComponentC from "./components/useContext/ComponentC";
 import CounterReducer from "./components/CounterReducer";
 import ComponentA from "./components/reducerContext/ComponentA";
 import ComponentB from "./components/reducerContext/ComponentB";

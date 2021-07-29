@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {UserContext,LanguageContext} from "../App";
+import {UserContext,LanguageContext} from "../../App";
 
 const ComponentF = () => {
 
